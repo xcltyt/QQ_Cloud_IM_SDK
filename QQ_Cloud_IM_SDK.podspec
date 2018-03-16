@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #s.source_files = "QQ_Cloud_IM_SDK/Classes/*.{h,m}"
   s.vendored_frameworks = 'Library/ImSDK.framework', 'Library/TLSSDK.framework','Library/QALSDK.framework','Library/TXLiteAVSDK_LivePlay.framework'
 
-  s.frameworks = 'CoreTelephony', 'SystemConfiguration'
-  s.libraries = 'stdc++.6', 'c++', 'z', 'sqlite3'
+  s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'Accelerate'
+  s.libraries = 'stdc++.6', 'c++', 'z', 'sqlite3', 'resolv'
 
 end
