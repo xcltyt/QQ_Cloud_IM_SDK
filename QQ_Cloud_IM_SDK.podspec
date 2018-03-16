@@ -19,11 +19,6 @@ Pod::Spec.new do |s|
   s.version      = "3.0"
   s.summary      = "腾讯云通信iOS SDK，集成了ImSDK、QALSDK、TLSSDK framework"
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
   腾讯云通信iOS SDK，集成了ImSDK、QALSDK、TLSSDK framework
                    DESC
@@ -39,10 +34,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/zenghaiguang/QQ_Cloud_IM_SDK.git", :tag => "#{s.version}" }
 
-  s.exclude_files = "Classes/Exclude"
-
   s.source_files = 'Library/TLSSDK.framework','Library/ImSDK.framework','Library/QALSDK.framework'
-  s.vendored_frameworks = 'ImSDK.framework', 'TLSSDK.framework','QALSDK.framework'
+  s.vendored_frameworks = 'Library/ImSDK.framework', 'Library/TLSSDK.framework','Library/QALSDK.framework'
 
   s.frameworks = 'CoreTelephony', 'SystemConfiguration'
   s.libraries = 'stdc++.6', 'c++', 'z', 'sqlite3'
