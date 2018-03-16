@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/zenghaiguang/QQ_Cloud_IM_SDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/zenghaiguang/QQ_Cloud_IM_SDK.git", :tag => s.version }
 
   #s.source_files = "QQ_Cloud_IM_SDK/Classes/*.{h,m}"
   s.vendored_frameworks = 'Library/ImSDK.framework', 'Library/TLSSDK.framework','Library/QALSDK.framework'
