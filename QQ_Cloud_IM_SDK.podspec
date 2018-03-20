@@ -34,7 +34,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/zenghaiguang/QQ_Cloud_IM_SDK.git", :tag => s.version }
 
-  s.source_files = "Library/TLSUI.bundle"
+  #s.source_files = "Class/*.{h,m}"
+  s.resource  = "Library/TLSUI.bundle"
   s.vendored_frameworks = 'Library/ImSDK.framework', 'Library/TLSSDK.framework','Library/QALSDK.framework','Library/TXLiteAVSDK_LivePlay.framework','Library/IMFriendshipExt.framework','Library/IMGroupExt.framework','Library/IMMessageExt.framework','Library/IMSDKBugly.framework','Library/TLSUI.framework'
 
   s.frameworks = 'CoreTelephony', 'SystemConfiguration', 'Accelerate'
